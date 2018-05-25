@@ -3,7 +3,7 @@
   <ul class="nav nav-tabs tabs-left">
     
     <li *ngFor="let minister of ministers, let i = index" data-toggle="tab" [ngClass]="{'active':i==0}"> 
-      <a href="#{{i}}" (click)="togglepane()"    data-toggle="tab">{{minister.name}}</a>
+      <a href="#{{i}}" (click)="togglepane(i)"    data-toggle="tab">{{minister.name}}</a>
     </li>
     
   </ul>
@@ -13,7 +13,7 @@
   <!-- Tab panes -->
   <div class="tab-content"  *ngFor="let minister of ministers, let i = index" >
   
-    <div class="tab-pane" [ngClass]="{'active':i==0}" id="{{i}}">
+    <div class="tab-pane" [ngClass]="{'active':i==0}" id="tabb{{i}}">
      <img [src]="minister.img_path">     {{minister.name}}
      <div *ngFor="let dept of minister.department">
         <span>{{dept}}</span> 

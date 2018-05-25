@@ -22,9 +22,13 @@ constructor(private ministerService:MinisterService){
   }
 
 
-  togglepane(){
+  togglepane(obj){
     // console.log('hi');
+    // $('.tab-pane').removeClass('active');
+    console.log(obj);
     $('.tab-pane').removeClass('active');
+    console.log('.tabb'+obj);
+    $('#tabb'+obj).addClass('active');
   }
 
   public ministers = [
