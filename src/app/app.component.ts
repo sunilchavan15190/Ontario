@@ -47,6 +47,11 @@ constructor(private ministerService:MinisterService){
       "name": "Dipika Damerla",
       "img_path": "https://d3v7qf8zyypult.cloudfront.net/profiles/dipika-damerla/small/headshot.jpg",
       "department": ["Minister of Seniors Affairs"]
+    },
+    {
+      "name": "Dipika Damerla",
+      "img_path": "https://d3v7qf8zyypult.cloudfront.net/profiles/dipika-damerla/small/headshot.jpg",
+      "department": ["Minister of Seniors Affairs"]
     }
   ];
 
