@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import * as $ from 'jquery';
 import {MinisterService} from './ministerservice.service'
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -50,3 +51,4 @@ constructor(private ministerService:MinisterService){
   ];
 
 }
+
